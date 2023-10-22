@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Michael Joseph Jackson</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico">
+        <link rel="stylesheet" href="Main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="topnav">
+                    <img src="images/stars.png" width="5%" alt="logo" class="logo">
+                    <ul style="list-style-type: none;">
+                    <li><a href="../Home.html">home</a></li>
+                    <li><a href="songs/songs.html">songs</a></li>
+                    <li><h1 style="color: blueviolet; text-indent: 300px;">Music page</h1></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <a href="#" class="previous round" onclick="goBack()">&#8249</a>
+                    <a href="#" class="next round" onclick="goForward()">&#8250</a>
+                </div>
+            </nav>
+        </header>
+        <h1> Michael Joseph Jackson</h1>
+        <map name="mj">
+            <area shape="rect" coords="0,0,1000,1000" onclick="start_music()" style="cursor: pointer;">
+        </map>
+        <img src="images/Michael Jackson.jpg" alt="Michael Jackson" class="center" usemap="#mj">
+        <h2>About</h2>
+        <p>Michael Joseph Jackson (August 29, 1958 – June 25, 2009) was an American singer, songwriter, and dancer. 
+            Dubbed the "King of Pop", he is regarded as one of the most significant cultural figures of the 20th century. 
+            Over a four-decade career, his contributions to music, dance, and fashion, along with his publicized personal life, made him a global figure in popular culture. 
+            Jackson influenced artists across many music genres; through stage and video performances, he popularized complicated dance moves such as the moonwalk, to which he gave the name, as well as the "robot". 
+            He is the most awarded individual music artist in history.</p>
+        <h2>Popular tracks</h2>
+        <p>His music videos, including those for "Beat It", "Billie Jean", and "Thriller" from his 1982 album Thriller, are credited with breaking racial barriers and transforming the medium into an artform and promotional tool. 
+            He helped propel the success of MTV and continued to innovate with videos for the albums Bad (1987), Dangerous (1991), and HIStory: Past, Present and Future, Book I (1995). 
+            Thriller became the best-selling album of all time, while Bad was the first album to produce five U.S. Billboard Hot 100 number-one singles.</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/64xlHAyyPr2PetYofao5xZ?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <map name="mj2">
+            <area shape="rect" coords="0,0,1000,1000" href="songs/King of pop cd 1.html" style="cursor: pointer;" width="100px">
+        </map>
+        <h2> Some popular albums of this artist</h2>
+        <img src="images/Michael Jackson.jpg" style="margin-left: auto; margin-right: auto; display: block; border-radius: 50%;" usemap="#mj2">
+        <h2 style="text-align: center;"> King of pop CD 1</h2>
+        <h2>Concerts and tours</h2>
+        <table style="border: 1px; border-color: white;">
+            <tr>
+                <th>s.no</th>
+                <th>Tour</th>
+                <th>Venue</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Munich tour 1998</td>
+                <th>Munich</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Dangerous tour</td>
+                <td>California, USA</td>
+            </tr>
+        </table>
+        <p> Comments and reviews</p>
+        <textarea width="100%" style="background-color: transparent; color: white;" id="comment"></textarea>
+        <p id="cmt"></p>
+        <script src="playsound.js"></script> 
+        <script src="navigation.js"></script>
+    </body>
+</html>

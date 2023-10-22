@@ -1,0 +1,16 @@
+Rubik wet paint:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+font-family: 'Rubik Wet Paint', cursive;
+
+send flowers:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Send+Flowers&display=swap" rel="stylesheet">
+
+font-family: 'Rubik Wet Paint', cursive;
+font-family: 'Send Flowers', cursive;

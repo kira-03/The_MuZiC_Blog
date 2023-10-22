@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshowkaran.css">
+    <title>The Weeknd</title>
+    <link rel="icon" href="images/play button.png">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="timeline.css">
+    <style>
+        .centre {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 500px;
+            border-radius: 25px;
+        }
+
+        html,
+        body {
+            margin: 0px;
+            height: 100%;
+
+        }
+
+        .split {
+            height: 80%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 10;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+            padding-right: 150px;
+            width: 60%;
+            padding-bottom: 3%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .centered img {
+            border-radius: 200px;
+            width: 400px;
+            height: 400px;
+            box-shadow: 0px 0px 30px #A3DA8D;
+        }
+
+        .timeline {
+            font-family: monospace;
+        }
+
+        .size {
+            width: auto;
+            /*box-shadow: 0px 0px 10px rosybrown;*/
+            margin: 15px;
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .timeline>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #f75306;
+        }
+
+        audio::-webkit-media-controls-timeline {
+            background-color: #f6b35d;
+            border-radius: 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        audio::-webkit-media-controls-volume-slider {
+            background-color: #f6b35d;
+            border-radius: 25px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: rgb(20, 16, 20);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: rgb(92, 25, 25);
+            border: 4px solid rgb(156, 89, 13);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: rgb(29, 26, 29);
+            position: relative;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header" class="row">
+        <div id="logo" class="col-2">
+            <a href="home.html">
+                <img src="images/logo.jpg" width="60" height="60" id="logo-img">
+            </a>
+        </div>
+        <div id="heading-1" class="col-10">
+            <h1>The MuZiC Blog</h1>
+        </div>
+    </div>
+    <div id="menudiv">
+        <div id="nav" style="font-family: 'Times New Roman', Times, serif;">
+            <a href="home.html"><i class="fa-solid fa-house-chimney" style="font-size: 1.8vw;"></i>&nbsp;Home</a>
+            <a href="songs.html"><i class="fa-solid fa-music" style="font-size: 1.8vw;"></i>&nbsp;Songs</a>
+        </div>
+    </div>
+    <hr style="width: 55%; align-self: center;">
+    <div class="split left">
+        <div class="centered">
+            <div class="slideshow-container">
+                <!--Full-width images with number-->
+                <div class="mySlides fade">
+                    <img src="images and gifs/1.sacrifice.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images and gifs/2.weeknd X ariana.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images and gifs/3.awards.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/4.weeknd X bella.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/5.blinding.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/6.new hair.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/7.out of time.jpeg" style="width:400px; height: 400px;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/8.after hours.png">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/9.after X dawn.jpg" style="width:400px; height: 400px;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/10.dawn.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/12.gif.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/13.gif.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/14.gif.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images and gifs/15.gif.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="split right">
+        <br>
+        <h2 class="size">About</h2>
+        <p class="size">
+            The Weeknd, byname of Abel Makkonen Tesfaye, (born February 16, 1990,
+            Toronto, Canada), Canadian rhythm-and-blues singer and
+            songwriter who was perhaps best known for his explicit songs about sex
+            and drugs, many of which were autobiographical, and for his soaring
+            falsetto and its singular tremolo. The Weeknd is the alias of
+            alternative R&B enigma-turned-pop star Abel Tesfaye, whose aching
+            accounts of emotionally and physically toxic indulgences have translated
+            to multi-platinum sales and Grammy recognition. He's referred to as the
+            'GOAT' by his fans. The Weeknd is the ultimate hair chameleon. From
+            cornrows to locs, the singer's hairstyles are as versatile as his
+            discography.
+        </p>
+        <h2 class="size">Blog</h2>
+        <p class="size">
+            The Weeknd makes me feel loved and to know about the pain of the loss of
+            something precious. His sweet voice is what all I look up to everyday.
+            He had tried a lot in this industry, and still he hadn't run out of new
+            stuff. He always amuses me with his new arrivals. Another thing that i
+            like a lot about his music and art is that he refers to himself and
+            about stuff in his life, so it just gives life to the songs. These
+            references just inspires me and makes me know more about him and he's so
+            good at describing them cause i could really move with him through the
+            verses.
+        </p>
+        <div class="timeline">
+            <a href="#second">
+                <div class="container left" id="first">
+                    <div class="content">
+                        <h2>16<sup>th</sup> Feb 1990</h2>
+                        <p>Birth of ABEL</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#third">
+                <div class="container right" id="second">
+                    <div class="content">
+                        <h2>2011</h2>
+                        <p>1<sup>st</sup> Song on Youtube - What You Need?</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#fourth">
+                <div class="container left" id="third">
+                    <div class="content">
+                        <h2>2013</h2>
+                        <p>1<sup>st</sup> Album - Kiss Land</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#fifth">
+                <div class="container right" id="fourth">
+                    <div class="content">
+                        <h2>2015</h2>
+                        <p>2<sup>nd</sup> Album - Beauty Behind the Madness</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#sixth">
+                <div class="container left" id="fifth">
+                    <div class="content">
+                        <h2>2016</h2>
+                        <p>3<sup>rd</sup> Album - Starboy</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#seventh">
+                <div class="container right" id="sixth">
+                    <div class="content">
+                        <h2>2020</h2>
+                        <p>4<sup>th</sup> Album - After Hours</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="container left" id="seventh">
+                    <div class="content">
+                        <h2>2022</h2>
+                        <p>5<sup>th</sup> Album - Dawn FM</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <h2 class="size">Signature notables</h2>
+        <p class="size">The singer and songwriter arrived in 2010 with
+            three mixtapes offering morose ballads that seemed to have no designs on
+            mainstream appeal. Within only a few years, however, Tesfaye had scored
+            a variety of Top Ten pop hits. These included a duet with Ariana Grande
+            ("Love Me Harder"), a dramatic ballad from the soundtrack of Fifty
+            Shades of Grey (the Grammy-winning "Earned It"), a retro-contemporary
+            disco-funk collaboration with Max Martin ("I Can't Feel My Face"), and a
+            sleek Daft Punk production ("Starboy"). Additionally, Tesfaye topped the
+            Billboard 200 with his second and third proper full-lengths, Beauty
+            Behind the Madness (2015) and Starboy (2016), which also made him a
+            two-time winner of the Grammy for Best Urban Contemporary Album. Tesfaye
+            entered the next decade with After Hours (2020), the chart-topping
+            source of the global smash "Blinding Lights," and followed up with Dawn
+            FM (2022).
+        </p>
+        <h2 class="size">Author Favorites</h2>
+        <h3>Blinding Lights</h3>
+        <img src="images and gifs/af-bl.jpg" alt="Blinding Lights" class="centre" onmouseover="run()"
+            onmouseout="pause1()">
+        <br>
+        <audio src="mp3 songs/blinding lights - audio.mpeg" controls class="centre" onmouseover="run()"
+            onmouseout="pause1()"></audio>
+        <p class="size">
+            Blinding Lights is about how you want to see someone at night, and you’re
+            intoxicated, and you’re driving to this person and you’re just blinded
+            by streetlights. But nothing could stop you from trying to go see that
+            person, because you’re so lonely. The Weeknd is not at peace unless he
+            is in the company of his lady. So who is the lady The Weekend is
+            speaking of? He is addressing his on and off model come girlfriend,
+            Bella Hadid. The clue is in the song's bridge where Abel tells the girl
+            he "Will never let her go this time." "I don’t want to ever promote drunk
+            driving, but that’s what the dark undertone is." You heard it from The
+            Weeknd himself, just because your favorite song of this very cursed year
+            happens to be about drunk driving to your hookup, let's be very clear:
+            drinking and driving is bad.
+        </p>
+        <h3>Call Out My Name</h3>
+        <img src="images and gifs/af-comn.jpg" alt="comn" class="centre">
+        <br>
+        <audio src="mp3 songs/call out my name - audio.mpeg" controls class="centre"></audio>
+        <p class="size">
+            While he hasn’t confirmed himself, The Weeknd’s fans pieced together
+            that this one is all about Abel’s ex flame Selena Gomez. The pair dated
+            for 10 months; a period during which Selena suffered from tremendous
+            illness due to Lupus. Abel wants to assure the fans that he always did
+            the right thing when it came to his relationship. A sentence that stands
+            out prominently in the chorus is “Girl, why can't you wait 'til I fall
+            out of love?” If only that was the way break ups worked, it would be a
+            lot less painful for everyone.
+        </p>
+        <h3>Moth To a Flame</h3>
+        <img src="images and gifs/af-mtf.jpg" alt="mtf" class="centre" style="background-color: #191970;">
+        <br>
+        <audio src="mp3 songs/moth to a flame - audio.mpeg" controls class="centre"></audio>
+        <p class="size">
+            This song of the GOAT was a colab with the Swedish House Mafia in 2021.
+            When Swedish House Mafia were thinking of people they wanted to work
+            with, the first name they wrote down was The Weeknd. "We love his dark
+            side, his voice, his mindset, everything", Ingrosso told the BBC.
+            "Like a moth to a flame" is a phrase that alludes to the way moths get
+            drawn to bright lights. Shakespeare referenced their irresistible and
+            dangerous attraction to a flame in his 1596 play The Merchant of Venice.
+            Thus hath the candle singed the moth. The Weeknd uses the idiom to
+            describe his relationship with a girl who has a partner. Though her guy
+            is good for her, she cannot resist the lure of the Toronto singer - like
+            a moth to a flame.
+        </p>
+        <h3>Starry Eyes</h3>
+        <img src="images and gifs/af-se.jpg" alt="se" class="centre">
+        <br>
+        <audio src="mp3 songs/starry eyes - audio.mpeg" controls class="centre"></audio>
+        <p class="size">
+            'Dawn FM' album is a direct sequel to the 'After Hours' album. It's
+            a character's journey through the phases of purgatory, and the eventual
+            acceptance of one's state of being. It is an upbeat record containing
+            dance-pop and synth-pop songs that are heavily inspired by the 1980s new
+            wave, funk and electronic dance music styles. In “Starry Eyes,” The
+            Weeknd is discussing a common theme of Dawn FM–caution in regard to
+            love–in light of a special girl. More specifically, Abel’s dream
+            girl–one who he has been enamoured with since he was “young and alone in
+            the world,"–has gone through struggles of her own: ones which have left
+            her "shattered". He seems ready to dive into a relationship with his
+            dream girl to help her emotionally. Evidently, he cares about her
+            poignantly to do so despite his learnt fears of love.
+        </p>
+    </div>
+    <script src="Slideshow.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Muzic Blog</title>
+    <link rel="icon" href="images/play button.png">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            width: 30%;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #one {
+            margin-left: 20%;
+        }
+
+        #two {
+            margin-left: 35%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header" class="row">
+        <div id="logo" class="col-2">
+            <a href="home.html">
+                <img src="images/logo.jpg" width="60" height="60" id="logo-img">
+            </a>
+        </div>
+        <div id="heading-1" class="col-10">
+            <h1>The MuZiC Blog</h1>
+        </div>
+    </div>
+    <div id="menudiv">
+        <div id="nav1">
+
+            <a href="home.html"><i class="fa-solid fa-house-chimney" style="font-size: 1.8vw;"></i>&nbsp;Home</a>
+            <a href="songs.html"><i class="fa-solid fa-music" style="font-size: 1.8vw;"></i>&nbsp;Songs</a>
+            <a href="project-team.html"><i class="fa-solid fa-people-group" style="font-size: 1.8vw;"></i>&nbsp;About
+                Us</a>
+
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    
+    <div class="row" id="one">
+        <div class="column">
+            <a href="harrystyles.html">
+                <img src="images/harry.jpg" width="180" height="180"
+                    style="border-radius: 50%; box-shadow: 0px 0px 10px white;">
+            </a>
+        </div>
+        <div class="column">
+            <a href="weeknd.html">
+                <img src="images/weeknd.png" width="180" height="180"
+                    style="border-radius: 50%; box-shadow: 0px 0px 5px white;">
+            </a>
+        </div>
+        <div class="column">
+            <a href="bts.html">
+                <img src="images/bts.jpg" width="180" height="180"
+                    style="border-radius: 50%; box-shadow: 0px 0px 10px white;">
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="row" id="two">
+        <div class="column">
+            <a href="shawn.html">
+                <img src="images/shawn.jpg" width="180" height="180"
+                    style="border-radius: 50%; box-shadow: 0px 0px 10px white;">
+            </a>
+        </div>
+
+        <div class="column">
+            <a href="mj.html">
+                <img src="images/mj.jpg" width="180" height="180"
+                    style="border-radius: 50%; box-shadow: 0px 0px 10px white;">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

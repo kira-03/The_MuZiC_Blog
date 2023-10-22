@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshowkaran.css">
+    <title>Ban Tan Sonyeondan</title>
+    <link rel="icon" href="images/play button.png">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="timeline.css">
+    <style>
+        .centre {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 500px;
+            border-radius: 25px;
+        }
+
+        html,
+        body {
+            margin: 0px;
+            height: 100%;
+
+        }
+
+        .split {
+            height: 80%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 10;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+            padding-right: 150px;
+            width: 60%;
+            padding-bottom: 3%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .centered img {
+            border-radius: 200px;
+            width: 400px;
+            height: 400px;
+            box-shadow: 0px 0px 20px #B026FF;
+        }
+
+        .timeline {
+            font-family: monospace;
+        }
+
+        .size {
+            width: auto;
+            /*box-shadow: 0px 0px 10px rosybrown;*/
+            margin: 15px;
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .timeline>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #f75306;
+        }
+
+        audio::-webkit-media-controls-timeline {
+            background-color: #f6b35d;
+            border-radius: 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        audio::-webkit-media-controls-volume-slider {
+            background-color: #f6b35d;
+            border-radius: 25px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: purple;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: purple;
+            border: 4px solid gold;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: purple;
+            position: relative;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header" class="row">
+        <div id="logo" class="col-2">
+            <a href="home.html">
+                <img src="images/logo.jpg" width="60" height="60" id="logo-img">
+            </a>
+        </div>
+        <div id="heading-1" class="col-10">
+            <h1>The MuZiC Blog</h1>
+        </div>
+    </div>
+    <div id="menudiv">
+        <div id="nav" style="font-family: 'Times New Roman', Times, serif;">
+            <a href="home.html"><i class="fa-solid fa-house-chimney" style="font-size: 1.8vw;"></i>&nbsp;Home</a>
+            <a href="songs.html"><i class="fa-solid fa-music" style="font-size: 1.8vw;"></i>&nbsp;Songs</a>
+        </div>
+    </div>
+    <hr style="width: 55%; align-self: center;">
+    <div class="split left">
+        <div class="centered">
+            <div class="slideshow-container">
+                <!--Full-width images with number-->
+                <div class="mySlides fade">
+                    <img src="mjimages/Michael Jackson 11.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="mjimages/Michael Jackson 2.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="mjimages/Michael Jackson 3.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/Michael Jackson 4.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/Michael Jackson 5.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/Michael Jackson 6.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/Michael Jackson 7.jpg" style="width:400px; height: 400px;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/Michael Jackson 8.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/Michael Jackson 9.jpg" style="width:400px; height: 400px;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/Michael Jackson 10.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/Moonwalk.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/MJ spin.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/AG lean.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mjimages/Zombie.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="split right">
+        <br>
+        <h2 class="size">About</h2>
+        <p class="size">Michael Joseph Jackson (August 29, 1958 – June 25, 2009) was an American singer,
+            songwriter, and
+            dancer.
+            Dubbed the "King of Pop", he is regarded as one of the most significant cultural figures of the
+            20th century.
+            Over a four-decade career, his contributions to music, dance, and fashion, along with his
+            publicized personal
+            life,
+            made him a global figure in popular culture.
+            Jackson influenced artists across many music genres; through stage and video performances, he
+            popularized
+            complicated dance moves such as the moonwalk, to which he gave the name, as well as the "robot".
+            He is the most awarded individual music artist in history. He was the 8th child in the jackson
+            family which
+            consisted of 10 children :)</p>
+        <h2 class="size">Blog</h2>
+        <p class="size">Michael Jackson was one of the main reason behind the development of American Pop music as it is
+            now. A 5 year old kid, along with his brothers
+            and an entertainment background, entered the field of music. No one knew that this tiny hatchling's gonna
+            become an immortal phoenix in the pop
+            culture. His first solo entry, "Got to be there" hit the US billboard top 100. Not an achievement that comes
+            just by crude luck and few supporters.
+            This very man flipped the way music and dance was seen. Music, which was limited to troops and recordings,
+            also spread to DVDs, TV commertials and
+            live broadcasts. Not only the perspective of how music was delivered changed, but also the wide audience who
+            listened to it. Many fellow music lovers,
+            across different nations listened to the creations of this legend. Michael Jackson is still popular among
+            Indians till date. Many new bands and artists
+            may come and go, but this man left a unique mark of his own in history through his music and dancing styles.
+        </p>
+        <div class="timeline">
+            <a href="#second">
+                <div class="container left" id="first">
+                    <div class="content">
+                        <h2>29<sup>th</sup> Aug 1958</h2>
+                        <p>A legend was born</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#third">
+                <div class="container right" id="second">
+                    <div class="content">
+                        <h2>1964</h2>
+                        <p>Time for some "Jackson 5" (later renamed as "The jacksons")</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#fourth">
+                <div class="container left" id="third">
+                    <div class="content">
+                        <h2>1971</h2>
+                        <p>Michael started his solo career</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#fifth">
+                <div class="container right" id="fourth">
+                    <div class="content">
+                        <h2>1979</h2>
+                        <p>Recognization of MJ for his "Off the wall album</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#sixth">
+                <div class="container left" id="fifth">
+                    <div class="content">
+                        <h2>1980's</h2>
+                        <p>MJ became a star of controversy due to change in appearance</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#seventh">
+                <div class="container right" id="sixth">
+                    <div class="content">
+                        <h2>2000's</h2>
+                        <p>Drastic change in appearance due to treatments in the past</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="container left" id="seventh">
+                    <div class="content">
+                        <h2>5<sup>th</sup> June 2009</h2>
+                        <p>The shining Star went to its deep slumber</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <h2 class="size">Signature notables</h2>
+        <p class="size">His famous albums include "Thriller","Bad","Dangerous","HIStory: Past, Present and
+            Future, Book 1".
+            Thriller album became the best selling album and is still of all times, "Bad" was the first ever
+            album to produce
+            five U.S Billboard hot 100 number-one singles</p>
+        <p class="size">Not only he was a great singer, but also a well proclaimed dancer.
+            MJ was not only good in swirling with his tongue.
+            He was also an energetic dancer which made him one of a kind performer.
+            His famous moves include "Moonwalk", "The robot", "The Mj spin",
+            "Anti gravity lean", "Toe stand", "Zombie shuffle",
+            and many many more.</p>
+        <h2 class="size">Author Favorites</h2>
+        <h3>Thriller</h3>
+        <img src="images/Thriller title card.jpg" alt="Thriller" class="centre" onmouseover="run()"
+            onmouseout="pause1()">
+        <br>
+        <audio src="MJ album/Michael Jackson - Thriller.mp3" controls class="centre" onmouseover="run()"
+            onmouseout="pause1()"></audio>
+        <p class="size">Thriller was one of the best among best of songs in the 20th century pop culture.
+            Being in the Top 200 of <i>"The Billboard"</i>, backed up by two other fan favorites <i>"Billie
+                Jean"</i> and
+            <i>"Beat it",
+                this song was literally on every radio and tv of that time.
+                Every night was enjoyable coz <b><i>"It's the THRILLER!!!....... Thriller Night!!!"</i></b>
+        </p>
+        <h3>The way you make me feel</h3>
+        <img src="images/The Way you make me feel.png" alt="TWYMMF" class="centre">
+        <br>
+        <audio src="MJ album/MJ- The way you make me feel.mp3" controls class="centre"></audio>
+        <p class="size">Well well well....... are you into the 20th pop?
+            And are you a fan of love tracks or anything that hypes the mood?
+            Then this song is the perfect one. "The way you make me feel", as the name suggests... is a love
+            song sung by this
+            legend.
+            This song was a part of the album "Bad", but proved to be a flaming song among couples for
+            sometime.
+            And as expected, this song was also among the top 100 in the billboard for a considerable time
+            period.
+            This song also featured his sister "Loyota Jackson".
+            Well no song had "the way this made me feel" </p>
+        <h3>Billie Jean</h3>
+        <img src="images/Billie Jean.png" alt="Billie jean" class="centre" style="background-color: #191970;">
+        <br>
+        <audio src="MJ album/Michael Jackson - Bille Jean.mp3" controls class="centre"></audio>
+        <p class="size"> Hmm... Nope! This ain't about Billy who lost his pair of jeans.
+            Billie Jean is another product by the legend.
+            The plot revolves around Michael being cheated by a girl named "Bille Jean" whom he met at a
+            night party and got
+            lured into her room.
+            She then accuses Michael for sufferings and claims him to be her baby's father. But Michael
+            later realizes all
+            these
+            were just the outcome of her masterplan! Poor Michael then roams around the street hopeless and
+            that is the
+            beginning scene of the song,
+            where Michael sings his fateful lore and weeps. OFC! "The Billie Jean's not my lover" too!"She's
+            just a girl who
+            claims that I AM THE ONE!!"
+        </p>
+        <h3>Smooth criminal</h3>
+        <img src="images/Smooth Criminal.jpg" alt="Smooth Criminal" class="centre">
+        <br>
+        <audio src="MJ album/Michael Jackson - Smooth Criminal.mp3" controls class="centre"></audio>
+        <p class="size">The apt title for the apt song, I must say! The song just literally pushed back
+            several other songs
+            and was at
+            the
+            top of the board within a few days of its release.
+            Not only that, this song also has a reference to the CPR treatement given by the paramedics.
+            During their training
+            for CPR, the trainees are to perform CPR to a dummy named "Annie",
+            and are also trained to ask "Annie! Are you okay?!", in order to check whether the victim is
+            responsive and
+            conscious.
+            But by mistake, the paramedics are noted to call the real victim as "Annie" becaouse of their
+            training and its
+            after
+            effects.
+            Our Spring man also had CPR in his life. So.... he found this to be a great way for a lyric and
+            also to pay
+            respect
+            to the hard working paramedics.
+            Wait a minute..... OH MY GOD!!! Annie are you okay?! Would you tell us that you are okay?!
+        </p>
+    </div>
+    <script src="Slideshow.js"></script>
+</body>
+
+</html>

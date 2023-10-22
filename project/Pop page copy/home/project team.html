@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Project team</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico">
+        <link rel="stylesheet" href="Main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="topnav">
+                    <img src="images/stars.png" width="5%" alt="logo" class="logo">
+                    <ul style="list-style-type: none;">
+                    <li><a href="../Home.html">home</a></li>
+                    <li><a href="songs/songs.html">songs</a></li>
+                    <li><h1 style="color: blueviolet; text-indent: 300px;">Music page</h1></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <a href="#" class="previous round" onclick="goBack()">&#8249</a>
+                    <a href="#" class="next round" onclick="goForward()">&#8250</a>
+                </div>
+            </nav>
+        </header>
+        <img src="../PT 1.jpg" alt="ME" class="center">
+        <h1 style="text-align: center;">ME</h1>
+        <p style="text-align: center;">The creator of this demo page</p>
+        <img src="../PT 2.jpg" alt="Karan" class="center">
+        <h1 style="text-align: center;">King Karng</h1>
+        <p style="text-align: center;">The DJ of this grp</p>
+        <img src="../PT 3.jpg" alt="Guru" class="center">
+        <h1 style="text-align: center;">Mister Shy gurrafff</h1>
+        <p style="text-align: center;">The man too shy to peek at the lioness' dens in the zoo (even tho he can)</p>
+        <img src="../PT 4.jpg" alt="Shreya" class="center">
+        <h1 style="text-align: center;">Ms. Googly VUNDer</h1>
+        <p style="text-align: center;">The fan of the famous Bear Tiger Snake band</p>
+        <map name="js">
+            <area shape="rect" coords="0,0,500,500" onclick="start_music()" ondblclick="Stop_music()">
+        </map>
+        <img src="../PT 5.jpg" alt="SK" class="center" usemap="#js">
+        <h1 style="text-align: center;">saronny kins</h1>
+        <p style="text-align: center;">The pillar of the grp in the WEEKENDS</p>
+        <audio src="/Beast Trailer Bgm.mp3" id="play_sound"></audio>
+        <script src="playsound.js"></script>
+    </body>
+</html>

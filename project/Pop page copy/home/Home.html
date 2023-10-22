@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Muzic Blogg</title>
+        <!--Creating favicon (image icon of the page)-->
+        <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
+        <!--Importing the css file-->
+        <link rel="stylesheet" href="Main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="topnav">
+                    <map name="music note">
+                        <area shape="rect" coords="0,0,512,512" onclick="start_music()" ondblclick="stop_music()">
+                    </map>
+                    <img src="/Users/karansinghania/Desktop/Pop page/home/images/muzic.png" width="5%" alt="logo" class="logo" usemap="#music note">
+                    <ul style="list-style-type: none;">
+                    <li><a href="Home.html">home&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</a></li>
+                    <li><a href="artists/songs/songs.html">songs&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</a></li>
+                    <li><a href="project team.html">Project team&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</a>
+                    <li><h1 style="color: blueviolet;">music page</h1></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <a href="#" class="previous round" onclick="goBack()">&#8249</a>
+                    <a href="#" class="next round" onclick="goForward()">&#8250</a>
+                </div>
+            </nav>
+        </header>
+        <h2>Let the Music Speak!</h2>
+        <p style="display: inline-block; vertical-align: top;"><pre>Welcome to the one and only html page where you 
+get to know about your artist as well as get 
+to feast upon some of their popular works</pre></p>
+    <map name="mj">
+        <area shape="rect" coords="0,0,740,416" href="artists/Michael jackson.html" style="cursor: pointer;">
+    </map>
+        <img src="images/Michael Jackson 2.jpg" alt="image" class="center" usemap="#mj"></img>
+        <p style="text-align: center;">Michael jackson</p>
+        <audio id="play_sound">
+            <source src="sounds/Rickroll.mp3">
+        </audio>
+        <script src="playsound.js"></script>
+        <script src="navigation.js"></script>
+    </body>
+</html>

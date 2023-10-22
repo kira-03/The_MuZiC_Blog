@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshowkaran.css">
+    <title>Harry Styles</title>
+    <link rel="icon" href="images/play button.png">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="timeline.css">
+    <style>
+        .centre {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 500px;
+            border-radius: 25px;
+        }
+
+        html,
+        body {
+            margin: 0px;
+            height: 100%;
+
+        }
+
+        .split {
+            height: 80%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 10;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+            padding-right: 150px;
+            width: 60%;
+            padding-bottom: 3%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .centered img {
+            border-radius: 200px;
+            width: 400px;
+            height: 400px;
+            box-shadow: 0px 0px 20px #B026FF;
+        }
+
+        .timeline {
+            font-family: monospace;
+        }
+
+        .size {
+            width: auto;
+            /*box-shadow: 0px 0px 10px rosybrown;*/
+            margin: 15px;
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .timeline>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #f75306;
+        }
+
+        audio::-webkit-media-controls-timeline {
+            background-color: #f6b35d;
+            border-radius: 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        audio::-webkit-media-controls-volume-slider {
+            background-color: #f6b35d;
+            border-radius: 25px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #A13A29;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #8CC1D6;
+            border: 4px solid #C48687;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: #819AA9;
+            position: relative;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header" class="row">
+        <div id="logo" class="col-2">
+            <a href="home.html">
+                <img src="images/logo.jpg" width="60" height="60" id="logo-img">
+            </a>
+        </div>
+        <div id="heading-1" class="col-10">
+            <h1>The MuZiC Blog</h1>
+        </div>
+    </div>
+    <div id="menudiv">
+        <div id="nav" style="font-family: 'Times New Roman', Times, serif;">
+            <a href="home.html"><i class="fa-solid fa-house-chimney" style="font-size: 1.8vw;"></i>&nbsp;Home</a>
+            <a href="songs.html"><i class="fa-solid fa-music" style="font-size: 1.8vw;"></i>&nbsp;Songs</a>
+        </div>
+    </div>
+    <hr style="width: 55%; align-self: center;">
+    <div class="split left">
+        <div class="centered">
+            <div class="slideshow-container">
+                <!--Full-width images with number-->
+                <div class="mySlides fade">
+                    <img src="Harry styles images/Harry 10.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="Harry styles images/Harry 2.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="Harry styles images/Harry 3.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles images/Harry 4.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles images/Harry 11.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles images/Harry 6.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles images/Harry 7.jpg" style="width:400px; height: 400px;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles images/Harry 8.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles images/Harry 9.jpg" style="width:400px; height: 400px;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles images/Harry 1.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles gifs/Harry Gifs 1.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles gifs/Harry gifs 2.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles gifs/Harry Gifs 3.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Harry styles gifs/Harry Gifs 4.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="split right">
+        <br>
+        <h2 class="size">About</h2>
+        <p class="size">Harry Edward Styles (born 1 February 1994) is an English singer, songwriter and actor. 
+            His musical career began in 2010 as a solo contestant on the British music competition series The X Factor. 
+            Following his elimination, he was brought back to join the boy band One Direction, which went on to become 
+            one of the best-selling boy bands of all time before going on an indefinite hiatus in 2016.</p>
+        <h2 class="size">Blog</h2>
+        <p class="size">Harry Styles makes me feel loved and to know about the pain of the loss of
+            something precious. His sweet voice is what all I look up to everyday.
+            He had tried a lot in this industry, and still he hadn't run out of new
+            stuff. He always amuses me with his new arrivals. Another thing that i
+            like a lot about his music and art is that he refers to himself and
+            about stuff in his life, so it just gives life to the songs. These
+            references just inspires me and makes me know more about him and he's so
+            good at describing them cause i could really move with him through the
+            verses.</p>
+        <div class="timeline">
+            <a href="#second">
+                <div class="container left" id="first">
+                    <div class="content">
+                        <h2>1<sup>st</sup> Feb 1994</h2>
+                        <p>Born</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#third">
+                <div class="container right" id="second">
+                    <div class="content">
+                        <h2>28<sup>th</sup> Feb 2010</h2>
+                        <p>Auditioned for X-Factor</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#fourth">
+                <div class="container left" id="third">
+                    <div class="content">
+                        <h2>4<sup>th</sup> March 2010</h2>
+                        <p>Eviction from X-Factor, Birth of One Direction.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#fifth">
+                <div class="container right" id="fourth">
+                    <div class="content">
+                        <h2>13<sup>th</sup> March 2011</h2>
+                        <p>One Direction releases 1<sup>st</sup> Album, "Up All Night"</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#sixth">
+                <div class="container left" id="fifth">
+                    <div class="content">
+                        <h2>August 2015</h2>
+                        <p>One Direction - No more a band</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#seventh">
+                <div class="container right" id="sixth">
+                    <div class="content">
+                        <h2>12<sup>th</sup> May 2017</h2>
+                        <p>Released 1<sup>st</sup> single album, "Harry Styles"</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="container left" id="seventh">
+                    <div class="content">
+                        <h2>13<sup>th</sup> December 2019</h2>
+                        <p>Releases "Fine Line"</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <h2 class="size">Author Favorites</h2>
+        <h3>Watermelon Sugar</h3>
+        <img src="Harry styles images/Harry cover 3.jpg" alt="ws" class="centre" onmouseover="run()"
+            onmouseout="pause1()">
+        <br>
+        <audio src="Harry styles album/Harry styles - watermelon sugar.mp3" controls class="centre" onmouseover="run()"
+            onmouseout="pause1()"></audio>
+        <p class="size">You’d be inclined to think it’s an odd decision to release a potential song of the summer in November, 
+            yet Harry Styles has clearly long stopped caring about convention. As excitement ramps up for 
+            his sophomore album, Fine Line, the former One Direction member’s surreally named “Watermelon Sugar” 
+            was dropped just before he appeared on Saturday Night Live last weekend.
+        </p>
+        <h3>As It Was</h3>
+        <img src="Harry styles images/aiw.png" alt="aiw" class="centre">
+        <br>
+        <audio src="Harry styles album/Harry-Styles-As-It-Was.mp3" controls class="centre"></audio>
+        <p class="size">There was a little crunch in the gears with his debut album as he got to grips with who he was, 
+            as if living up to his surname with a range of different, anti-Directional genres. 
+            But he cruised on to a golden Pacific Coast Highway of pop with 2019’s exceptional 
+            Fine Line: focused and alert, even as the hazy musical surroundings changed around him.
+        <h3>Sign Of The Times</h3>
+        <img src="Harry styles images/sott.jpg" alt="sott" class="centre" style="background-color: #191970;">
+        <br>
+        <audio src="Harry styles album/Harry styles - sign of the times.mp3" controls class="centre"></audio>
+        <p class="size"> The powerful piano-led ballad perfectly accompanies the raw, mature, 
+            soulful voice of Styles. His falsetto slowly emerges throughout the song, so calming and sweetly 
+            captivating with the sensitive lyrics of life and loss flowing with the melody.
+        </p>
+        <h3>Kiwi</h3>
+        <img src="Harry styles images/kiwi cover.jpg" alt="kiwi" class="centre">
+        <br>
+        <audio src="Harry styles album/Harry Styles - Kiwi.mp3" controls class="centre"></audio>
+        <p class="size">While the song clocks in at just under three minutes, it packs an instant punch, and will have you shout-screaming the lyrics at the top of your lungs in no time.
+            While the song clocks in at just under three minutes, 
+            it packs an instant punch, and will have you shout-screaming the lyrics 
+            at the top of your lungs in no time.
+
+        </p>
+    </div>
+    <script src="Slideshow.js"></script>
+</body>
+
+</html>

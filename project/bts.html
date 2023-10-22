@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshowkaran.css">
+    <title>Bangtan Sonyeondan</title>
+    <link rel="icon" href="images/play button.png">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="timeline.css">
+    <style>
+        .centre {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 500px;
+            border-radius: 25px;
+        }
+
+        html,
+        body {
+            margin: 0px;
+            height: 100%;
+
+        }
+
+        .split {
+            height: 80%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 10;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            right: 0;
+            padding-right: 150px;
+            width: 60%;
+            padding-bottom: 3%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .centered img {
+            border-radius: 50px;
+            width: 400px;
+            height: 400px;
+            box-shadow: 0px 0px 20px white;
+        }
+
+        .timeline {
+            font-family: monospace;
+        }
+
+        .size {
+            width: auto;
+            /*box-shadow: 0px 0px 10px rosybrown;*/
+            margin: 15px;
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .timeline>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #f75306;
+        }
+
+        audio::-webkit-media-controls-timeline {
+            background-color: #f6b35d;
+            border-radius: 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        audio::-webkit-media-controls-volume-slider {
+            background-color: #f6b35d;
+            border-radius: 25px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: rgb(105,0,16);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: rgb(105,0,16);
+            border: 4px solid goldenrod;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: transparent;
+            position: relative;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header" class="row">
+        <div id="logo" class="col-2">
+            <a href="home.html">
+                <img src="images/logo.jpg" width="60" height="60" id="logo-img">
+            </a>
+        </div>
+        <div id="heading-1" class="col-10">
+            <h1>The MuZiC Blog</h1>
+        </div>
+    </div>
+    <div id="menudiv">
+        <div id="nav" style="font-family: 'Times New Roman', Times, serif;">
+            <a href="home.html"><i class="fa-solid fa-house-chimney" style="font-size: 1.8vw;"></i>&nbsp;Home</a>
+            <a href="songs.html"><i class="fa-solid fa-music" style="font-size: 1.8vw;"></i>&nbsp;Songs</a>
+        </div>
+    </div>
+    <hr style="width: 55%; align-self: center;">
+    <div class="split left">
+        <div class="centered">
+            <div class="slideshow-container">
+                <!--Full-width images with number-->
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/1.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/2.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/3.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/4.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/5.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/6.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/7.gif" style="width:400px; height: 400px;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/8.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/9.jpg" style="width:400px; height: 400px;">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/10.gif">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/11.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/12.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/13.jpg">
+                </div>
+                <div class="mySlides fade">
+                    <img src="SLIDESHOW BTS/14.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="split right">
+        <br>
+        <h2 class="size">About</h2>
+        <p class="size">BTS (Bangtan Sonyeondan), also known as the Bangtan Boys, is a South Korean boy band that was
+            formed in 2010 and debuted in 2013 under Big Hit Entertainment. Consisting of members Jin, Suga, J-Hope, RM,
+            Jimin, V, and Jungkook. They co-write and co-produce much of their own output. Originally a hip hop group,
+            their musical style has evolved to include a wide range of genres. Their lyrics, often focused on personal
+            and social commentary, touch on the themes of mental health, troubles of school-age youth and coming of age,
+            loss, the journey towards loving oneself, and individualism. Their work also often references literature and
+            psychological concepts and includes an alternative universe storyline.</p>
+        <h2 class="size">BTS TO ME ♡ </h2>
+        <p class="size">In recent years, many individuals have mocked me for being a fan, called them racist and
+            homophobic names, disregarding my views about the band, and even questioning my sincerity as a fan. But as
+            my bond with BTS develops and I learn more about their good messeages, I realise that my bond with them is
+            entirely personal, stemming from the fact that they were there for me when no one else was, when I didn't
+            know who to rely on. It'll never be simple to sum up BTS's impact on my life in a single sentence, but I'll
+            try: they helped me grow. Despite the fact that I don't know them personally, their words have made me feel
+            better in several situations, and the fact that I find myself wanting to rush over to them and tell them
+            about every problem I've had shows how much they mean to me. They bring so much comfort and care to me and
+            the rest of Army in order to help us grow as people and live our lives, but they never ask for anything in
+            return, and it is because of their kindness that I will still be here in 10, 20, 50 years.</p>
+        <div class="timeline">
+            <a href="#second">
+                <div class="container left" id="first">
+                    <div class="content">
+                        <h2>12<sup>th</sup> June 2013</h2>
+                        <p> The group debuted on June 13, 2013 with the release of their debut single album 2 Cool 4
+                            Skool with "No More Dream" as the title track. </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#third">
+                <div class="container right" id="second">
+                    <div class="content">
+                        <h2>19<sup>th</sup> Aug 2014</h2>
+                        <p>First Full Length album</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#fourth">
+                <div class="container left" id="third">
+                    <div class="content">
+                        <h2>30<sup>th</sup> Nov 2015</h2>
+                        <p>A new era is set for the band as their fourth EP The Most Beautiful Moment in Life, Part 2
+                            releases and becomes their first album to debuts on the Billboard 200</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#fifth">
+                <div class="container right" id="fourth">
+                    <div class="content">
+                        <h2>29<sup>th</sup> Oct 2016</h2>
+                        <p>The band tops the Social 50 Billboard chart for the first time.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#sixth">
+                <div class="container left" id="fifth">
+                    <div class="content">
+                        <h2>2<sup>nd</sup> Oct 2017</h2>
+                        <p> Their song DNA peaks at number 67 on the Hot 100 Billboard, also becoming the highest K-pop
+                            song at the time.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#seventh">
+                <div class="container right" id="sixth">
+                    <div class="content">
+                        <h2>15<sup>th</sup> May 2018</h2>
+                        <p>Fake Love gets released as the first single from their new album Love Yourself: Tear. The
+                            song debuts at number 10 on the Hot 100, becoming the group's highest-charting song.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#eigth">
+                <div class="container left" id="eighth">
+                    <div class="content">
+                        <h2>24<sup>th</sup> Sept 2018</h2>
+                        <p>BTS give a speech at the UN headquarters advising young people to join global efforts against
+                            discrimination and poverty. The speech goes viral as #BTSxUnitedNations trends worldwide on
+                            Twitter.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#nineth">
+                <div class="container right" id="nineth">
+                    <div class="content">
+                        <h2>1<sup>st</sup> June 2019</h2>
+                        <p>BTS sells out London's Wembley Stadium while also making history as the first Korean act to
+                            do so.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#tenth">
+                <div class="container left" id="tenth">
+                    <div class="content">
+                        <h2>31<sup>st</sup> Aug 2020</h2>
+                        <p>Topped Billboard Hot 100 Chart With “Dynamite”</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#eleventh">
+                <div class="container right" id="eleventh">
+                    <div class="content">
+                        <h2>2<sup>nd</sup> Feb 2021</h2>
+                        <p>Ranked NO.1 on the billboard HOT 100 chart for 7 whole weeks.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <h2 class="size">Signature notables</h2>
+        <p class="size">BTS has broken many records and recieved over 400 awards.
+            Although when it comes to the most notable achievement, It would be this.
+            The members of BTS were involved with several philanthropic organizations.
+            In 2017 they teamed with UNICEF to launch the Love Myself campaign, which raised
+            funds to support social programs fighting violence against children and teens.
+        </p>
+        <p class="size">In 2021 South Korean Pres. Moon Jae-In appointed the members of BTS as special
+            presidential envoys for future generations and culture. As such, the band members took
+            turns giving a speech ahead of the annual United Nations General Assembly meeting of world
+            leaders in New York, New York, and showed a video of themselves performing their latest
+            single, “Permission to Dance,” which had been shot in the UN General Assembly Building’s iconic
+            Assembly Hall and on the grounds nearby. BTS encouraged the world’s youth to become a beacon of
+            change amid the coronavirus SARS-CoV-2 pandemic and urged people to get vaccinated.
+            This according to me in the biggest and the proudest achievement for BTS
+        </p>
+        <h2 class="size">Author Favorites</h2>
+        <h3>No More Dream</h3>
+        <img src="SLIDESHOW BTS/NMD.jpg" alt="NMD" class="centre" onmouseover="run()" onmouseout="pause1()">
+        <br>
+        <audio src="btsalbum/Y2Mate.is - BTS () 'No More Dream' Official MV-rBG5L7UsUxA-160k-1650206250025.mp3" controls
+            class="centre" onmouseover="run()" onmouseout="pause1()"></audio>
+        <p class="size">The song is the lead single that BTS debuted with in 2013. It was received with strong
+            impressions within the k-pop industry, for it’s honest and motivational lyrics, and it’s authenticity
+            (compared to other k-pop songs at the time).<b>BTS</b> are trying to encourage them to stand up and have
+            their own dreams and pursue those dreams and not focus so much on these things and be forced into someone
+            else’s dream.
+        </p>
+        <h3>Blood Sweat & Tears</h3>
+        <img src="SLIDESHOW BTS/BS&T.jpeg" alt="bst" class="centre">
+        <br>
+        <audio src="btsalbum/BTS - Blood Sweat & Tears.mp3" controls class="centre"></audio>
+        <p class="size">On the single “Blood Sweat & Tears” from the group’s 2016 album, Wings, tropical house blends
+            with moombahton production as members Jimin, Jungkook, Suga, RM, J-Hope, V, and Jin declare their
+            willingness to throw everything on the line for love, success or whatever their aim might be. Thematically,
+            the guys blend sentiments of temptation with an often carnal willingness to sacrifice everything.</p>
+        <h3>Butter</h3>
+        <img src="SLIDESHOW BTS/BUTTER.jpeg" alt="butter" class="centre" style="background-color: #191970;">
+        <br>
+        <audio src="btsalbum/BTS - Butter.mp3" controls class="centre"></audio>
+        <p class="size">
+            “Butter” is a dance-pop song with lyrical confessions of sweet, romantic love. The fun and witty lyrics
+            brimming with positive and bright energy will instantly uplift moods. The track uniquely shows each of the
+            BTS' member’s charms as they show how smooth and at times charismatic, they can be. The song is dubbed as a
+            summer anthem credited to its distinctive bass line and crisp synth sounds, ready to melt the listener’s
+            heart.
+            <br />
+            <br /> It becomes their second English song following “Dynamite” and will receive a more widespread
+            promotion on radio stations. It is also their 3rd track to debut at #1 on the Hot 100, and their 4th track
+            to hit #1 on the Hot 100.
+        </p>
+        <h3>Magic Shop</h3>
+        <img src="SLIDESHOW BTS/MAGIC SHOP.jpeg" alt="magic shop" class="centre">
+        <br>
+        <audio src="btsalbum/BTS - Magic shop.mp3" controls class="centre"></audio>
+        <p class="size">This song, is my personal favorite. This has always been the song that I listen to when I need
+            to get out of my head for a bit; it helps me feel so much better. It always assures me with the safety that
+            my heart and mind require from time to time.
+            <br /><br /> With the help of BTS' youngest member Jungkook for the production of the song, “Magic Shop” is
+            a track that surrounds a concept about how if fans look inside their hearts, they will find a magic shop
+            where they can exchange their fears for happiness and find the love all of the members have for them.
+            <br /><br />During the BTS press conference on May 24, 2018, Jungkook described the track as a song that
+            could be comforting for ARMYs—whenever they felt tired, sad, or frustrated they could just have to open the
+            door in their heart to the magic shop and there they would find the seven members of BTS waiting for them.
+        </p>
+    </div>
+    <script src="Slideshow.js"></script>
+</body>
+
+</html>
