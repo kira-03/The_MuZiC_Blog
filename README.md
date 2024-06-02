@@ -1,1 +1,1 @@
-An innovative and vibrant static online music blog that seamlessly blends HTML, CSS, and JavaScript to celebrate artists, foster a sense of community, and enable the sharing of personal connections and musical experiences.
+Created a vibrant static online music blog using HTML, CSS, and JavaScript to celebrate artists and foster community. Featured our personal thoughts on our favorite artists (my personal favorite is Shawn Mendes ✌️). Enhanced the user experience with visually appealing design and engaging content to share personal connections and musical experiences.
